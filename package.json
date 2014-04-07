@@ -6,7 +6,8 @@
     "rho": "*",
     "cheerio": "*",
     "diff": "*",
-    "extend": "extend"
+    "extend": "*",
+    "latinize": "*"
   },
   "devDependencies": {
     "mocha": "*"
