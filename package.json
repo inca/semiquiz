@@ -1,15 +1,17 @@
 {
   "name": "semiquiz",
-  "version": "0.0.0",
-  "description": "Semantic quizzes from Cloudemy with love",
+  "version": "0.0.1",
+  "description": "SemiQuiz — semantic quiz toolkit",
   "dependencies": {
     "rho": "*",
     "cheerio": "*",
-    "diff": "*"
+    "diff": "*",
+    "extend": "extend"
   },
   "devDependencies": {
     "mocha": "*"
   },
+  "main": "./lib/index.js",
   "repository": "https://github.com/inca/semiquiz",
   "keywords": [
     "quiz",
