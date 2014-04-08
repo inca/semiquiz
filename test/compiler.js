@@ -20,7 +20,7 @@ describe('SemiQuiz Compiler Samples', function() {
 
     var text = fs.readFileSync(path.join(dir, file), 'utf-8')
       , form = new Compiler().compile(text)
-      , json = fs.readFileSync(path.join(dir, basename + '.js'), 'utf-8')
+      , json = fs.readFileSync(path.join(dir, basename + '.json'), 'utf-8')
       , template = JSON.parse(json);
 
     describe(basename, function() {
