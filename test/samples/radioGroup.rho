@@ -1,0 +1,15 @@
+Radio groups are used when you want to let the visitor select one -- and just one --
+option from a set of alternatives.
+
+## Example
+
+2 + 2 =
+
+( ) two
+
+( ) three
+
+(x) four
+
+( ) five
+

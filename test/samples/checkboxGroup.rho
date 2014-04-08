@@ -1,0 +1,24 @@
+Checkbox groups are used when you want to let the visitor select any number
+of alternatives.
+
+## Example
+
+Select odd numbers:
+
+[ ] two
+
+[x] three
+
+[ ] four
+
+[x] five
+
+Select even numbers:
+
+[x] two
+
+[ ] three
+
+[x] four
+
+[ ] five

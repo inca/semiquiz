@@ -7,12 +7,17 @@
     "cheerio": "*",
     "diff": "*",
     "extend": "*",
-    "latinize": "*"
+    "latinize": "*",
+    "nomnom": "*"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "underscore": "*"
   },
   "main": "./lib/index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
   "repository": "https://github.com/inca/semiquiz",
   "keywords": [
     "quiz",
