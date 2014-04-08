@@ -39,6 +39,25 @@ Winter is the ({hottest}{+coldest}) season of the year.
 2. 16 / 4 =   {{ 4  }}
 
 3. 20 * 1.5 = {{ 30 }}
+
+## Sortable groups
+
+Arrange chronologically:
+
+  ^ Wake up
+
+  ^ Brush teeth
+
+  ^ Go to work
+
+  ^ Work, work, work
+
+  ^ Go back home
+
+  ^ Have a dinner
+
+  ^ Go to sleep
+
 ```
 
 SemiQuiz can compile this example into an HTML form (for client-side)

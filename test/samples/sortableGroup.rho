@@ -1,0 +1,19 @@
+Sortable group allow user to place items in the correct sequential order.
+
+## Example
+
+Arrange chronologically:
+
+  ^ Wake up
+
+  ^ Brush teeth
+
+  ^ Go to work
+
+  ^ Work, work, work
+
+  ^ Go back home
+
+  ^ Have a dinner
+
+  ^ Go to sleep
