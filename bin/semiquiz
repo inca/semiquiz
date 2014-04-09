@@ -18,7 +18,8 @@ function done(err) {
 var opts = require('nomnom')
   .option('input', {
     abbr: 'i',
-    help: 'source text file to process'
+    help: 'source text file to process',
+    position: 0
   })
   .option('output', {
     abbr: 'o',
