@@ -253,6 +253,17 @@ describe('SemiQuiz Reviewer', function() {
         assert.equal(review.input[6], '7: Go to sleep');
       });
 
+      it('should report errors in review markup', function() {
+        var $ = cheerio.load(review.html.review);
+        assert.equal($('#item-d2d51e43').hasClass('error'), false);
+        assert.equal($('#item-ecc4db36').hasClass('error'), false);
+        assert.equal($('#item-6bc308bc').hasClass('error'), false);
+        assert.equal($('#item-654d7ee3').hasClass('error'), true);
+        assert.equal($('#item-4923e34e').hasClass('error'), true);
+        assert.equal($('#item-6f07526a').hasClass('error'), true);
+        assert.equal($('#item-8c7fd80c').hasClass('error'), false);
+      });
+
     });
 
   });
