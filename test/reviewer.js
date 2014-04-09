@@ -206,4 +206,56 @@ describe('SemiQuiz Reviewer', function() {
 
   });
 
+  describe('sortableGroup', function() {
+    var form = loadSample('sortableGroup');
+
+    describe('correct', function() {
+
+      var review = new Reviewer().compile(form, {
+        'c-3ef2918d': [ 'd2d51e43', 'ecc4db36', '6bc308bc',
+          '4923e34e', '6f07526a', '654d7ee3', '8c7fd80c']
+      });
+
+      it('should detect correct answer', function() {
+        assert.equal(review.errorIds.length, 0);
+      });
+
+      it('should report valid input', function() {
+        assert.equal(review.input[0], '1: Wake up');
+        assert.equal(review.input[1], '2: Brush teeth');
+        assert.equal(review.input[2], '3: Go to work');
+        assert.equal(review.input[3], '4: Work, work, work');
+        assert.equal(review.input[4], '5: Go back home');
+        assert.equal(review.input[5], '6: Have a dinner');
+        assert.equal(review.input[6], '7: Go to sleep');
+      });
+
+    });
+
+    describe('incorrect', function() {
+
+      var review = new Reviewer().compile(form, {
+        'c-3ef2918d': [ 'd2d51e43', 'ecc4db36', '6bc308bc',
+          '654d7ee3', '4923e34e', '6f07526a', '8c7fd80c']
+      });
+
+      it('should detect incorrect answer', function() {
+        assert.equal(review.errorIds.length, 1);
+      });
+
+      it('should report input', function() {
+        assert.equal(review.input[0], '1: Wake up');
+        assert.equal(review.input[1], '2: Brush teeth');
+        assert.equal(review.input[2], '3: Go to work');
+        assert.equal(review.input[3], '5: Work, work, work');
+        assert.equal(review.input[4], '6: Go back home');
+        assert.equal(review.input[5], '4: Have a dinner');
+        assert.equal(review.input[6], '7: Go to sleep');
+      });
+
+    });
+
+  });
+
 });
+
