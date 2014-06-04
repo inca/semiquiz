@@ -1,0 +1,28 @@
+Associative group allows user to drag select items into correct categories.
+
+## Example
+
+Place code fragments under relevant categories.
+
+  @ Keywords
+
+    * `function`
+    * `var`
+    * `while`
+    * `for`
+    * `if`
+
+  @ Core data types
+
+    * `String`
+    * `Date`
+    * `Number`
+    * `Function`
+    * `Boolean`
+
+  @ Literals
+
+    * `1.0`
+    * `"1.0"`
+    * `{ key: value }`
+    * `"if"`
