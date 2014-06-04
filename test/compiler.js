@@ -44,11 +44,9 @@ describe('SemiQuiz Compiler Samples', function() {
           if (sCtl.items) {
             sCtl.items.forEach(function(sItem) {
               var dItem = _(dCtl.items).findWhere({ id: sItem.id });
-              assert.notEqual(sItem.value, undefined);
               assert.equal(sItem.value, dItem.value);
             });
           } else {
-            assert.notEqual(sCtl.value, undefined);
             assert.equal(sCtl.value, dCtl.value);
           }
         });
