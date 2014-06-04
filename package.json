@@ -8,11 +8,11 @@
     "diff": "*",
     "extend": "*",
     "latinize": "*",
-    "nomnom": "*"
+    "nomnom": "*",
+    "underscore": "*"
   },
   "devDependencies": {
-    "mocha": "*",
-    "underscore": "*"
+    "mocha": "*"
   },
   "main": "./lib/index.js",
   "scripts": {
