@@ -253,22 +253,6 @@ describe('SemiQuiz Reviewer', function() {
         assert.equal(review.input[6], '7: Go to sleep');
       });
 
-      it('should arrange items in submitted order in `filled`', function() {
-        var $ = cheerio.load(review.html.filled);
-        var ids = $('.item').map(function(i, el) { return $(el).attr('id') });
-        assert.equal(ids.get().join(','),
-          'item-d2d51e43,item-ecc4db36,item-6bc308bc,item-654d7ee3,' +
-            'item-4923e34e,item-6f07526a,item-8c7fd80c');
-      });
-
-      it('should arrange items in correct order in `review`', function() {
-        var $ = cheerio.load(review.html.review);
-        var ids = $('.item').map(function(i, el) { return $(el).attr('id') });
-        assert.equal(ids.get().join(','),
-          'item-d2d51e43,item-ecc4db36,item-6bc308bc,item-4923e34e,' +
-            'item-6f07526a,item-654d7ee3,item-8c7fd80c');
-      });
-
       it('should report errors in review markup', function() {
         var $ = cheerio.load(review.html.review);
         assert.equal($('#item-d2d51e43').hasClass('error'), false);
