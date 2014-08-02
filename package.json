@@ -1,6 +1,6 @@
 {
   "name": "semiquiz",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "SemiQuiz — semantic quiz toolkit",
   "dependencies": {
     "rho": "*",
