@@ -1,0 +1,29 @@
+{
+  "signature": "3747ce8e20bd6e887d2ee6b3e742c3f963cbdd822e078488fee61411d986c62d",
+  "text": "Text inputs provide users with fields for text entry.\n\n## Example\n\nWrite in English:\n\n------------------------ {.centered}\n 1    | {{ one       }[two]}\n 2    | {{ two       }[three]}\n 12   | {{ twelve    }[ten]}\n------------------------\n",
+  "html": {
+    "prompt": "<p>Text inputs provide users with fields for text entry.</p>\n<h2>Example</h2><p>Write in English:</p>\n<table class=\"centered\"><tbody><tr><td>1    </td><td><input id=\"c-68bfbcb6\" name=\"c-68bfbcb6\" class=\"inputText\" type=\"text\" size=\"11\" value=\"two\"></td></tr><tr><td>2    </td><td><input id=\"c-6ff11105\" name=\"c-6ff11105\" class=\"inputText\" type=\"text\" size=\"11\" value=\"three\"></td></tr><tr><td>12   </td><td><input id=\"c-c7cfe307\" name=\"c-c7cfe307\" class=\"inputText\" type=\"text\" size=\"11\" value=\"ten\"></td></tr></tbody></table>",
+    "template": "<p>Text inputs provide users with fields for text entry.</p>\n<h2>Example</h2><p>Write in English:</p>\n<table class=\"centered\"><tbody><tr><td>1    </td><td><input id=\"c-68bfbcb6\" name=\"c-68bfbcb6\" class=\"inputText\" type=\"text\" size=\"11\" value=\"two\"/></td></tr><tr><td>2    </td><td><input id=\"c-6ff11105\" name=\"c-6ff11105\" class=\"inputText\" type=\"text\" size=\"11\" value=\"three\"/></td></tr><tr><td>12   </td><td><input id=\"c-c7cfe307\" name=\"c-c7cfe307\" class=\"inputText\" type=\"text\" size=\"11\" value=\"ten\"/></td></tr></tbody></table>",
+    "solution": "<p>Text inputs provide users with fields for text entry.</p>\n<h2>Example</h2><p>Write in English:</p>\n<table class=\"centered\"><tbody><tr><td>1    </td><td><input id=\"c-68bfbcb6\" name=\"c-68bfbcb6\" class=\"inputText\" type=\"text\" size=\"11\" value=\"one\" disabled=\"disabled\"></td></tr><tr><td>2    </td><td><input id=\"c-6ff11105\" name=\"c-6ff11105\" class=\"inputText\" type=\"text\" size=\"11\" value=\"two\" disabled=\"disabled\"></td></tr><tr><td>12   </td><td><input id=\"c-c7cfe307\" name=\"c-c7cfe307\" class=\"inputText\" type=\"text\" size=\"11\" value=\"twelve\" disabled=\"disabled\"></td></tr></tbody></table>"
+  },
+  "controls": [
+    {
+      "type": "inputText",
+      "id": "c-68bfbcb6",
+      "value": "one",
+      "defaultValue": "two"
+    },
+    {
+      "type": "inputText",
+      "id": "c-6ff11105",
+      "value": "two",
+      "defaultValue": "three"
+    },
+    {
+      "type": "inputText",
+      "id": "c-c7cfe307",
+      "value": "twelve",
+      "defaultValue": "ten"
+    }
+  ]
+}

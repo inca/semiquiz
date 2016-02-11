@@ -199,9 +199,9 @@ describe('SemiQuiz Reviewer', function() {
 
     it('should compile detailed reviews', function() {
       var $ = cheerio.load(review.html.review);
-      assert.equal($('#c-1ac95b3d').html(), '<ins>one</ins><del>un</del>');
-      assert.equal($('#c-c89111ad').html(), '<ins>two</ins><del>deux</del>');
-      assert.equal($('#c-a95f7481').html(), '<ins>twelve</ins><del>douze</del>');
+      assert.equal($('#c-1ac95b3d').html(), '<del>un</del><ins>one</ins>');
+      assert.equal($('#c-c89111ad').html(), '<del>deux</del><ins>two</ins>');
+      assert.equal($('#c-a95f7481').html(), '<del>douze</del><ins>twelve</ins>');
     });
 
   });

@@ -40,6 +40,10 @@ Winter is the ({hottest}{+coldest}) season of the year.
 
 3. 20 * 1.5 = {{ 30 }}
 
+4. Even with regex check: 2 / 4 = {/0[,.]50*/,4}
+
+5. And default entered value 2 * 2.5 = {{ 5  }[ 4 ]}
+
 ## Sortable groups
 
 Arrange chronologically:
