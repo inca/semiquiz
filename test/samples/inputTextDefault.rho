@@ -1,0 +1,11 @@
+Text inputs provide users with fields for text entry.
+
+## Example
+
+Write in English:
+
+------------------------ {.centered}
+ 1    | {{ one       }[two]}
+ 2    | {{ two       }[three]}
+ 12   | {{ twelve    }[ten]}
+------------------------
